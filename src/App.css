@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+/* .input-form{
+width
+} */
+body {
+  margin: 0;
+  font-family: "Red Hat Display",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+.review{
+  background-color: rgba(0, 0, 0, 0.7); 
+}
+.input-label{
+  margin-top: 0.75rem; /* Equivalent to mt-3 */
+  height: 1.5rem; /* Equivalent to h-6 */
+  font-size: 0.75rem; /* Equivalent to text-xs */
+  font-weight: 700; /* Equivalent to font-bold */
+  text-transform: uppercase; /* Equivalent to uppercase */
+  line-height: 2rem; /* Equivalent to leading-8 */
+} 
+.input-wrapper{
+  margin-top: 0.5rem;   /* my-2: Applies 0.5rem margin to the top and bottom */
+  margin-bottom: 0.5rem;
+  display: flex;        /* flex: Applies flexbox layout */
+  border-radius: 0.25rem;  /* rounded: Applies a border-radius of 0.25rem */
+  border-width: 1px;       /* border: Specifies a 1px border */
+  border-style: solid;
+  border-color: #d1d5db;   /* border-gray-300: Tailwind's gray-300 (#d1d5db) */
+  background-color: white; /* bg-white: Background color is white */
+  padding: 0.25rem;        /* p-1: Padding of 0.25rem */
+}
+.input{
+  width: 100%;             /* w-full */
+  appearance: none;         /* appearance-none */
+  padding: 0.25rem 0.5rem;  /* p-1 px-2 */
+  color: #2d3748;           /* text-gray-800 */
+  outline: none; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tab-navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  margin-top: 1rem;
+  /* border-bottom: 1px solid #e5e7eb; border-gray-200 */
+}
+
+.tab-button {
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  /* font-weight: bold; */
+  /* color: #4b5563; text-gray-700 */
+  transition: color 0.2s ease;
+}
+
+.tab-button:hover {
+  color: #FA462E; /* hover:bg-lime-500 */
+}
+
+.tab-button.active {
+  border-bottom: 2px solid #FA462E; /* Active tab underline */
+  font-weight: bold;
+}
+.participants-table{
+  width: 100%;
+}
+
+.participants-table th, .participants-table td {
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb; /* border-gray-200 */
+}
+
+.participants-table th {
+  background-color: #f3f4f6; /* bg-gray-100 */
+  font-weight: bold;
+}
+
+.participants-table td {
+  background-color: #ffffff; /* bg-white */
+}
+
+/* Add Participant Button */
+.add-participant-btn {
+  background-color: #1E40AF; /* bg-lime-600 */
   color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.add-participant-btn:hover {
+  background-color: #0c65be; /* bg-lime-700 */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.icon-btn:hover {
+  opacity: 0.7;
+}
+
+/* Edit and Delete Icon Styling */
+.edit-icon {
+  color: #4b5250; /* lime-600 */
+  font-size: 1.2rem;
+}
+
+.delete-icon {
+  color: #ef4444; /* red-500 */
+  font-size: 1.2rem;
+}
+
+.place-input, .time-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+/* Save Results Button */
+.save-results-btn {
+  background-color: #1E40AF; /* bg-lime-600 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.save-results-btn:hover {
+  background-color: #0c65be;; /* bg-lime-700 */
 }
