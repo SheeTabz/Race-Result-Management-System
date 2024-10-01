@@ -404,7 +404,7 @@ body {
 span {
   margin: 0 5px;
 }
-/* AlertPopup.css */
+/* AlertPopup for errors*/
 .alert-overlay {
   position: fixed;
   top: 0;
